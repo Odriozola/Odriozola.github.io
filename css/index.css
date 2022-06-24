@@ -332,6 +332,7 @@ hr.divider {
 #escritos,
 #historia,
 #donar,
+#voluntario,
 #objetivo {
     max-height: 100%;
     background-position: center center;
@@ -378,6 +379,14 @@ hr.divider {
 
 #donar {
     background-image: url("../img/donar.png");
+    min-width: 100%;
+    height: auto;
+    min-height: 80vh;
+    background-size: contain;
+}
+
+#voluntario {
+    background-image: url("../img/voluntario.png");
     min-width: 100%;
     height: auto;
     min-height: 80vh;
@@ -451,6 +460,7 @@ hr.divider {
         min-height: 110vh;
     }
     #donar,
+    #voluntario,
     #objetivo {
         min-height: 50vh;
     }
@@ -482,9 +492,12 @@ hr.divider {
     #escritos {
         min-height: 90vh;
     }
-    #donar,
     #objetivo {
         min-height: 40vh;
+    }
+    #donar,
+    #voluntario {
+        min-height: 30vh;
     }
     #v_aportar {
         height: 75vh;
