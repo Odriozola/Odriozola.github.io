@@ -133,21 +133,9 @@ $(document).ready(function() {
     }
 
     $(window).scroll(function() {
-        let footer = $(".page-footer").offset();
         let main = $("#main").offset();
-        footer = footer.top;
         main = main.top;
-        //mostrar y ocultar boton ir arriba al hacer scroll
-        if ($(window).scrollTop() > footer) {
-            cierraNav();
-            $('#aprendamos').fadeOut(200, function() {
-                $('#aprendamos').css("position", "absolute");
-            });
-        } else {
-            $('#aprendamos').fadeIn('slow');
-            $('#aprendamos').css("position", "fixed");
-        }
-
+        //mostrar y ocultar 
         if ($(window).scrollTop() > main) {
             $('#aprendamos').fadeIn('slow');
             $('#aprendamos').removeClass("header-transparent");
