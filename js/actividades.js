@@ -9,7 +9,7 @@ $(document).ready(function() {
             //llamamos form oculto en el documento con alertify
             alertify.FormCliente($('#FormAct')[0])
                 .set('position', 'bottom-center')
-                .resizeTo('50%', 430);
+                .resizeTo('70%', 500);
         }
     });
 }); //ready
