@@ -6,16 +6,10 @@ $(document).ready(function() {
         $("#tit_pop").html(title);
         $("#desc_act").html(desc);
         if (!alertify.auxConfirm) {
-            //si es celular
-            $(window).resize(function() {
-                if ($(window).width() <= 750) {
-                    alertify.FormCliente($('#FormAct')[0]);
-                }
-            });
             //llamamos form oculto en el documento con alertify
             alertify.FormCliente($('#FormAct')[0])
                 .set('position', 'bottom-center')
-                .resizeTo('70%', 500);
+                .resizeTo('75%', 400);
         }
     });
 }); //ready
