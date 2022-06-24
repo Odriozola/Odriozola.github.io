@@ -10,6 +10,14 @@ $(document).ready(function() {
             alertify.FormCliente($('#FormAct')[0])
                 .set('position', 'bottom-center')
                 .resizeTo('70%', 500);
+            //si es celular
+            $(window).resize(function() {
+                if ($(window).width() <= 750) {
+                    alertify.FormCliente($('#FormAct')[0])
+                        .set('position', 'bottom-center')
+                        .resizeTo('100%', 450);
+                }
+            });
         }
     });
 }); //ready
