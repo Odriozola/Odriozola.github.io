@@ -329,6 +329,7 @@ hr.divider {
 
 #nosotros,
 #testimonio,
+#escritos,
 #historia,
 #donar,
 #objetivo {
@@ -351,11 +352,19 @@ hr.divider {
     height: 80vh;
 }
 
+#escritos {
+    background-image: url("../img/escritos.png");
+    min-width: 100%;
+    height: auto;
+    min-height: 200vh;
+    background-size: contain;
+}
+
 #historia {
     background-image: url("../img/historia.png");
     min-width: 100%;
     height: auto;
-    min-height: 100vh;
+    min-height: 95vh;
     background-size: contain;
 }
 
@@ -438,6 +447,9 @@ hr.divider {
     #historia {
         min-height: 70vh;
     }
+    #escritos {
+        min-height: 110vh;
+    }
     #donar,
     #objetivo {
         min-height: 50vh;
@@ -466,6 +478,9 @@ hr.divider {
     }
     #historia {
         min-height: 60vh;
+    }
+    #escritos {
+        min-height: 90vh;
     }
     #donar,
     #objetivo {
