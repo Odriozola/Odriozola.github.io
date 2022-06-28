@@ -7,7 +7,7 @@ a cada participante y beneficiario.
 
 Se implementaron API´s de desarrolladores externos para facilitar el uso de la plataforma y mejorar la experiencia del usuario final, en
 general se requiere de mantenimiento y seguimiento para que el impacto deseado sea fructífero, que los recuadros puedan ser editables y 
-funcionales para cualquier modificación futura.
+funcionales para cualquier modificación futura. Este desarrollo está desarrollado con HTML, CSS y Javascript con apoyo de Bootstrap, Jquery, Alertify y AOS.
 
 El diseño es responsivo, pensado para todo tipo de dispositivo móvil dentro de las herramientas más populares del momento como lo es Google Chrome
 o Safari, Por lo que es necesario estar en constante actualización de las tecnologías que le den soporte a las tecnologías que en su momento
