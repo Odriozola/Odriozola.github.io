@@ -1,5 +1,4 @@
 $(document).ready(function() {
-
     //cargamos módulo de nosotros en automático
     let active = $(".active").data('opc');
     //muestra gif y esconde inicio
@@ -15,14 +14,13 @@ $(document).ready(function() {
         }
     }); //hamburguer	
 
-    //si hace click en refautomex hace trigger a nosotros
     $('.block').click(function() {
         //cambiamos active a seleccion opc
         cambiaActive(1);
         setTimeout(cargaModulos(1), 1000);
     })
 
-    $('.block2').click(function() {
+    $('.block2, .block3, .aviso').click(function() {
         let sel = $(this).data('opc');
         //muestra gif y esconde inicio
         $("#main").css("display", "none");
@@ -31,39 +29,6 @@ $(document).ready(function() {
         cambiaActive(sel);
         //cargamos el módulo
         setTimeout(cargaModulos(sel), 1000);
-    });
-
-    $('.block3').click(function() {
-        let sel = $(this).data('opc');
-        //muestra gif y esconde inicio
-        $("#main").css("display", "none");
-        $("#cargar").show();
-        //asignamos active
-        cambiaActive(sel);
-        //cargamos el módulo
-        setTimeout(cargaModulos(sel), 1000);
-    });
-
-    $("#facturaform").click(function() {
-        //muestra gif y esconde inicio
-        $("#main").css("display", "none");
-        $("#cargar").show();
-        //subimos al inicio de la pagina
-        $('html, body').animate({ scrollTop: 0 }, 'slow');
-        //asignamos active
-        cambiaActive(4);
-        //cargamos el módulo
-        setTimeout(cargaModulos(4), 1000);
-    });
-
-    $("#buzonform").click(function() {
-        //muestra gif y esconde inicio
-        $("#main").css("display", "none");
-        $("#cargar").show();
-        //asignamos active
-        cambiaActive(4);
-        //cargamos el módulo
-        setTimeout(cargaModulos(4), 1000);
     });
 
     function abreNav() {
@@ -122,6 +87,13 @@ $(document).ready(function() {
             case 5:
                 $("#main").load('donar.html', function() {
                     $.getScript("js/initaos.js");
+                    //esconde gif
+                    $("#cargar").hide();
+                    $("#main").css("display", "block");
+                });
+                break;
+            case 6:
+                $("#main").load("aviso_privacidad.html", function() {
                     //esconde gif
                     $("#cargar").hide();
                     $("#main").css("display", "block");
