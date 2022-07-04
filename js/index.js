@@ -20,13 +20,22 @@ $(document).ready(function() {
         setTimeout(cargaModulos(1), 1000);
     })
 
-    $('.block2, .block3, .aviso').click(function() {
+    $('.block2, .block3').click(function() {
         let sel = $(this).data('opc');
         //muestra gif y esconde inicio
         $("#main").css("display", "none");
         $("#cargar").show();
         //asignamos active
         cambiaActive(sel);
+        //cargamos el módulo
+        setTimeout(cargaModulos(sel), 1000);
+    });
+
+    $(".aviso").click(function() {
+        let sel = $(this).data('opc');
+        //muestra gif y esconde inicio
+        $("#main").css("display", "none");
+        $("#cargar").show();
         //cargamos el módulo
         setTimeout(cargaModulos(sel), 1000);
     });
@@ -94,6 +103,7 @@ $(document).ready(function() {
                 break;
             case 6:
                 $("#main").load("aviso_privacidad.html", function() {
+                    $.getScript("js/initaos.js");
                     //esconde gif
                     $("#cargar").hide();
                     $("#main").css("display", "block");
