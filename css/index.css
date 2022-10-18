@@ -1,5 +1,10 @@
 body {
     background-image: url('../img/marmol.png');
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-attachment: fixed;
     z-index: 0;
     font-family: 'Uchen', serif;
 }
